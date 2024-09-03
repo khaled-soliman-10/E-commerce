@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>On CLick</title>
 </head>
@@ -50,53 +51,53 @@
     </header>
 
     <!-- hero start -->
-    <section class="hero center">
+    <section class="hero center main">
         <!-- header -->
         <div class="container">
             <div class="baner center">
-                <h1>everything you need is here..!</h1>
-                <div class="shop-links center">
-                    <a href="products.html" class="link-btn">shop now</a>
-                    <a href="about-us.html" class="link-btn">about us</a>
+                <h1>view product</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- product view -->
+    <section class="view-product sec">
+        <div class="container">
+            <div class="product-content center">
+                <div class="image">
+                    <img src="products/pro1.jpeg" alt="" class="img">
+                </div>
+                <!-- pro details -->
+                <div class="product-details clm">
+                    <div class="type center">
+                        <h1 class="product-name">headphone</h1>
+                        <h3 class="category">category: electronics</h3>
+                    </div>
+                    <h3 class="product-price">30.00$</h3>
+                    <p class="product-descrip">pla pla pla pla pla pla pla pla pla pla pla pla pla.....</p>
+                    <form action="" method="post" class="clm">
+                        <div class="num-of-orders center">
+                            <button  type="button" class="decrement center"><i class="fa-solid fa-minus"></i></button>
+                            <input type="text" name="num_of_orders" value="1">
+                            <button  type="button" class="increment center"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="view" type="submit">add to cart</button>
+                    </form>
+                    <form action="" method="post">
+                        <button type="submit" class="view">add to favorite <i class="fa-regular fa-heart"></i></button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- logos start -->
-    <section class="logos">
-        <div class="logos-slide center">
-            <img src="imgs/logo6.png" alt="">
-            <img src="imgs/logo7.png" alt="">
-            <img src="imgs/logo8.png" alt="">
-            <img src="imgs/logo9.png" alt="">
-            <img src="imgs/PayPal-logo-white-png-vertical.png" alt="">
-            <img src="imgs/logo4.jpg" alt="">
-            <img src="imgs/logo3.jpeg" alt="">
-            <img src="imgs/logo2.jpg" alt="">
-            <img src="imgs/logo1.jpeg" alt="">
-        </div>
-        <div class="logos-slide center">
-            <img src="imgs/logo6.png" alt="">
-            <img src="imgs/logo7.png" alt="">
-            <img src="imgs/logo8.png" alt="">
-            <img src="imgs/logo9.png" alt="">
-            <img src="imgs/PayPal-logo-white-png-vertical.png" alt="">
-            <img src="imgs/logo4.jpg" alt="">
-            <img src="imgs/logo3.jpeg" alt="">
-            <img src="imgs/logo2.jpg" alt="">
-            <img src="imgs/logo1.jpeg" alt="">
-        </div>
-    </section>
-
-    <!-- news arrival start -->
+    <!-- similar products -->
     <section class="latest sec">
         <div class="container">
             <div class="latest-content clm">
                 <!-- content -->
                 <div class="clm">
-                    <h1 class="sec-title">Latest additions</h1>
-                    <h3 class="sec-descrip">List of the latest added products</h3>
+                    <h1 class="sec-title">similar products</h1>
                 </div>
                 <div class="latest-details center">
                     <!-- product start -->
@@ -160,80 +161,8 @@
                             </div>                        </div>
                     </div>
                     <!-- product end -->
-                    <!-- product start -->
-                    <div class="product clm">
-                        <img src="products/pro5.jpeg" alt="" class="img">
-                        <div class="product-info clm">
-                            <h1 class="product-name">whatch</h1>
-                            <h3 class="product-price">30.00$</h3>
-                            <p class="product-descrip">pla pla pla pla pla pla pla pla pla pla pla pla pla.....</p>
-                            <div class="product-action center">
-                                <a href="product.html" class="view">view <i class="fa-solid fa-eye"></i></a>
-                                <form action="" method="post">
-                                    <Button class="view" type="submit" name="favorite"><i class="fa-regular fa-heart"></i></Button>
-                                </form>
-                            </div>                        </div>
-                    </div>
-                    <!-- product end -->
                 </div>
-                <a href="products.html" class="view">view more....</a>
                 <!-- content -->
-            </div>
-        </div>
-    </section>
-
-    <!-- baner -->
-    <section class="advertise clm">
-        <p>Our goal is to Happiness our customers</p> 
-        <p>With us we meet all your needs</p>
-    </section>
-
-    <!-- services -->
-    <section class="services sec">
-        <div class="container">
-            <div class="services-content clm">
-                <!-- content -->
-                <div class="clm">
-                    <h1 class="sec-title">our services</h1>
-                    <h3 class="sec-descrip">What services do we provide to you?</h3>
-                </div>
-                <div class="services-details center">
-                    <!-- img start -->
-                    <div class="image">
-                        <img src="imgs/services12.jpg" alt="">
-                    </div>
-
-                    <div class="services-list center">
-                        <!-- service start -->
-                        <div class="service clm">
-                            <i class="fa-solid fa-truck"></i>
-                            <h1 class="service-name">fast shipping</h1>
-                            <p class="service-descrip">We offer you the fastest and safest way to deliver and ship orders.</p>
-                        </div>
-                        <!-- service end -->
-                        <!-- service start -->
-                        <div class="service clm">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                            <h1 class="service-name">easy to shop</h1>
-                            <p class="service-descrip">Browse, shop and order products easily through our store.</p>
-                        </div>
-                        <!-- service end -->
-                        <!-- service start -->
-                        <div class="service clm">
-                            <i class="fa-solid fa-arrow-right-arrow-left"></i>                            
-                            <h1 class="service-name">Hassle Free Returns</h1>
-                            <p class="service-descrip">You can buy products and return them easily and without any hassle.</p>
-                        </div>
-                        <!-- service end -->
-                        <!-- service start -->
-                        <div class="service clm">
-                            <i class="fa-solid fa-hand-holding-dollar"></i>                            
-                            <h1 class="service-name">Save your money</h1>
-                            <p class="service-descrip">Save your money and time and order from us and enjoy the discounts.</p>
-                        </div>
-                        <!-- service end -->
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -291,5 +220,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/btns.js"></script>
 </body>
 </html>

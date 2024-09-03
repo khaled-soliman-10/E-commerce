@@ -1,0 +1,21 @@
+@import url('login.css');
+
+form {
+    max-width: 650px;
+    flex-wrap: wrap;
+}
+
+.input {
+    flex: 1 !important;
+    width: auto !important;
+}
+
+.input:last-of-type button {
+    align-self: center !important;
+    width: 170px;
+}
+
+.new-account a {
+    color: var(--white-color) !important;
+    text-decoration: none !important;
+}

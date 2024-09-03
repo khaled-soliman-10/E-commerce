@@ -1,0 +1,122 @@
+header {
+    background-color: var(--fushea-color);
+}
+
+.profile {
+    min-height: 70vh;
+    /* background-color: var(--gray-week-color); */
+}
+
+.profile-content {
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.profile-details {
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.user-info {
+    min-width: 330px;
+    max-width: 750px;
+    flex: 1;
+    background-color: var(--white-color);
+    box-shadow: 1.2px 1.2px 7px var(--gray-color);
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.info {
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.info:last-of-type {
+    border: none;
+}
+
+.info h1 {
+    text-transform: capitalize;
+    font-size: 20px;
+    color: var(--black-color);
+}
+
+.info h3 {
+    font-size: 20px;
+    color: var(--grayS-color);
+}
+
+.user-setting {
+    gap: 10px;
+    min-width: 330px;
+    max-width: calc(100% - 770px);
+    flex: 1;
+    background-color: var(--white-color);
+    box-shadow: -1.2px 1.2px 7px var(--gray-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.user-setting .image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-setting h1 {
+    font-size: 25px;
+    color: var(--black-color);
+    margin-bottom: 20px;
+}
+
+.user-links {
+    gap: 10px;
+    width: 100%;
+}
+
+.user-links li {
+    padding: 10px;
+    border-bottom: 1px solid var(--gray-color);
+    width: 100%;
+}
+
+.user-links li:last-of-type {
+    border: none;
+}
+
+.user-links li a {
+    color: var(--main-color);
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.user-links li a:hover {
+    color: var(--sec-color);
+}
+
+.user-links li button {
+    /* padding: 10px; */
+    margin: 0;
+    color: brown;
+    border-color: brown;
+}
+
+.user-links li button:hover {
+    background-color: brown;
+    color: var(--white-color);
+}
+
+@media (max-width: 716px) {
+    .user-setting {
+        max-width: 100%;
+    }
+}

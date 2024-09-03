@@ -1,0 +1,13 @@
+.main {
+    background-image: url('../imgs/contact.jpg');
+}
+
+@media (max-width: 800px) {
+    .main {
+        background-image: url('../imgs/contact-mobile.jpg');
+    }
+}
+
+/* header .nav-links li:nth-of-type(3) {
+    background-color: var(--main-color);
+} */

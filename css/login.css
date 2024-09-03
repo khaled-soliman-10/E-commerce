@@ -1,0 +1,106 @@
+.main {
+    background-image: url('../imgs/lock.jpg') !important;
+    height: 60vh !important;
+}
+
+
+.login {
+    gap: 20px;
+}
+
+form {
+    max-width: 320px;
+    width: 100%;
+    gap: 20px;
+}
+
+.input:not(:last-of-type) {
+    min-width: 250px;
+    width: 100%;
+    height: auto !important;
+    border: 1px solid var(--sec-color);
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.input:not(:last-of-type) input {
+    height: 30px !important;
+    padding: 10px;
+    font-size: 17px !important;
+    color: var(--black-color);
+}
+
+.input:not(:last-of-type) label {
+    font-size: 18px;
+    color: var(--sec-color);
+    background-color: var(--white-color);
+    position: absolute;
+    top: 0;
+    left: 10px;
+    transform: translateY(-50%);
+    padding: 0 10px;
+    text-transform: capitalize;
+}
+
+.input:not(:last-of-type) input {
+    width: 95%;
+    height: 100%;
+    font-size: 17px;
+    color: var(--black-color);
+    resize: none;
+}
+
+.input:last-of-type {
+    width: 100%;
+    min-width: 250px;
+    gap: 5px;
+}
+
+.input:last-of-type label {
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--black-color);
+}
+
+form button {
+    margin: 0px 0 10px !important;
+    width: 100px;
+    align-self: flex-start !important;
+    color: var(--sec-color) !important;
+    border-color: var(--sec-color) !important;
+}
+
+form button:hover {
+    background-color: var(--sec-color) !important;
+    color: var(--white-color) !important;
+}
+
+.new-account {
+    padding: 30px 10px;
+    border-top: 1px solid var(--grayS-color);
+    max-width: 320px;
+    width: 100%;
+    gap: 30px;
+}
+
+.new-account a:first-child {
+    color: var(--grayS-color);
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.new-account a:first-child:hover {
+    text-decoration: underline;
+}
+
+.new-account a:last-child {
+    border-radius: 10px;
+    text-transform: capitalize;
+    background-color: #9d12b5;
+}
+
+.new-account a:last-child:hover {
+    background-color: var(--fushea-color);
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>On CLick</title>
 </head>
@@ -50,54 +51,34 @@
     </header>
 
     <!-- hero start -->
-    <section class="hero center">
+    <section class="hero center main">
         <!-- header -->
         <div class="container">
             <div class="baner center">
-                <h1>everything you need is here..!</h1>
+                <h1>products page</h1>
                 <div class="shop-links center">
-                    <a href="products.html" class="link-btn">shop now</a>
-                    <a href="about-us.html" class="link-btn">about us</a>
+                    <form action="product-search.html" method="get" class="center">
+                        <div class="search center">
+                            <input type="text" name="product_name" placeholder="product name">
+                            <button type="submit" class="link-btn">Search</button>
+                        </div>
+                    </form>
+                    <!-- <a href="product-search.html" class="link-btn">searsh</a> -->
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- logos start -->
-    <section class="logos">
-        <div class="logos-slide center">
-            <img src="imgs/logo6.png" alt="">
-            <img src="imgs/logo7.png" alt="">
-            <img src="imgs/logo8.png" alt="">
-            <img src="imgs/logo9.png" alt="">
-            <img src="imgs/PayPal-logo-white-png-vertical.png" alt="">
-            <img src="imgs/logo4.jpg" alt="">
-            <img src="imgs/logo3.jpeg" alt="">
-            <img src="imgs/logo2.jpg" alt="">
-            <img src="imgs/logo1.jpeg" alt="">
-        </div>
-        <div class="logos-slide center">
-            <img src="imgs/logo6.png" alt="">
-            <img src="imgs/logo7.png" alt="">
-            <img src="imgs/logo8.png" alt="">
-            <img src="imgs/logo9.png" alt="">
-            <img src="imgs/PayPal-logo-white-png-vertical.png" alt="">
-            <img src="imgs/logo4.jpg" alt="">
-            <img src="imgs/logo3.jpeg" alt="">
-            <img src="imgs/logo2.jpg" alt="">
-            <img src="imgs/logo1.jpeg" alt="">
-        </div>
-    </section>
-
-    <!-- news arrival start -->
+    <!-- products start -->
     <section class="latest sec">
         <div class="container">
             <div class="latest-content clm">
                 <!-- content -->
                 <div class="clm">
-                    <h1 class="sec-title">Latest additions</h1>
-                    <h3 class="sec-descrip">List of the latest added products</h3>
+                    <h1 class="sec-title">our products</h1>
+                    <!-- <h3 class="sec-descrip">List of the latest added products</h3> -->
                 </div>
+                <button class="view center" style="gap: 10px;">filters <i class="fa-solid fa-sliders"></i></button>
                 <div class="latest-details center">
                     <!-- product start -->
                     <div class="product clm">
@@ -176,66 +157,42 @@
                     </div>
                     <!-- product end -->
                 </div>
-                <a href="products.html" class="view">view more....</a>
                 <!-- content -->
             </div>
         </div>
     </section>
 
-    <!-- baner -->
-    <section class="advertise clm">
-        <p>Our goal is to Happiness our customers</p> 
-        <p>With us we meet all your needs</p>
-    </section>
-
-    <!-- services -->
-    <section class="services sec">
-        <div class="container">
-            <div class="services-content clm">
-                <!-- content -->
-                <div class="clm">
-                    <h1 class="sec-title">our services</h1>
-                    <h3 class="sec-descrip">What services do we provide to you?</h3>
+        <!-- filters form hidden -->
+    <section class="hidden center">
+        <form action="" method="get" class="center">
+            <button class="close center" type="button"><i class="fa-solid fa-x"></i></button>
+            <div class="filters clm">
+                <!-- list of categories -->
+                <!--  -->
+                <h1>select categories: </h1>
+                <div class="filter center">
+                    <input type="checkbox" name="categories[]" id="electronics">
+                    <label for="electronics">electronics</label>
                 </div>
-                <div class="services-details center">
-                    <!-- img start -->
-                    <div class="image">
-                        <img src="imgs/services12.jpg" alt="">
-                    </div>
-
-                    <div class="services-list center">
-                        <!-- service start -->
-                        <div class="service clm">
-                            <i class="fa-solid fa-truck"></i>
-                            <h1 class="service-name">fast shipping</h1>
-                            <p class="service-descrip">We offer you the fastest and safest way to deliver and ship orders.</p>
-                        </div>
-                        <!-- service end -->
-                        <!-- service start -->
-                        <div class="service clm">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                            <h1 class="service-name">easy to shop</h1>
-                            <p class="service-descrip">Browse, shop and order products easily through our store.</p>
-                        </div>
-                        <!-- service end -->
-                        <!-- service start -->
-                        <div class="service clm">
-                            <i class="fa-solid fa-arrow-right-arrow-left"></i>                            
-                            <h1 class="service-name">Hassle Free Returns</h1>
-                            <p class="service-descrip">You can buy products and return them easily and without any hassle.</p>
-                        </div>
-                        <!-- service end -->
-                        <!-- service start -->
-                        <div class="service clm">
-                            <i class="fa-solid fa-hand-holding-dollar"></i>                            
-                            <h1 class="service-name">Save your money</h1>
-                            <p class="service-descrip">Save your money and time and order from us and enjoy the discounts.</p>
-                        </div>
-                        <!-- service end -->
-                    </div>
+                <!--  -->
+                <div class="filter center">
+                    <input type="checkbox" name="categories[]" id="clothes">
+                    <label for="clothes">clothes</label>
                 </div>
             </div>
-        </div>
+
+            <div class="filters clm">
+                <!-- select price -->
+                <h1>select maximum price: </h1>
+                <div class="filter center">
+                    <input type="range" name="price" id="price" min="1" max="1000" value="30" step="1" >
+                    <p>max price: <span class="value"></span> $</p>
+                </div>
+            </div>
+            <div class="last">
+                <button type="submit" class="link-btn">filter</button>
+            </div>
+        </form>
     </section>
 
     <!-- footer -->
@@ -288,8 +245,9 @@
                 </div>
             </div>
         </div>
-    </footer>
-
+    </footer> 
+    
     <script src="js/main.js"></script>
-</body>
-</html>
+    <script src="js/search.js"></script>
+    </body>
+    </html>

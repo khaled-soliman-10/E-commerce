@@ -1,0 +1,42 @@
+.main {
+    background-image: url('../imgs/shopo-cart2.jpg');
+}
+
+/* @media (max-width: 800px) {
+    .main {
+        background-image: url('../imgs/shop-cart1-mobile.jpg');
+    }
+} */
+
+.results {
+    width: 100%;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.result {
+    gap: 10px;
+    width: 100%;
+    border-bottom: 1px solid var(--gray-color);
+    padding: 10px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.result:hover {
+    background-color: var(--gray-week-color);
+}
+
+.result .image {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--gray-color);
+}
+
+.result .details {
+    align-items: flex-start;
+    gap: 10px;
+    height: 120px;
+}
